@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle1"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fabStyle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle2"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toRightOf="@id/fabStyle1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle3"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fabStyle4"
+        app:layout_constraintTop_toBottomOf="@id/fabStyle1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle4"
+
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toRightOf="@id/fabStyle3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fabStyle2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle5"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fabStyle6"
+        app:layout_constraintTop_toBottomOf="@id/fabStyle3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStyle6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/FabShapeStyle6"
+        android:layout_margin="@dimen/_16sdp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintLeft_toRightOf="@id/fabStyle5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fabStyle4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
